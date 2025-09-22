@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5555365095288818826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7598853649904085133}
+  - component: {fileID: 6908290013355836743}
+  - component: {fileID: 1631585741886041615}
+  m_Layer: 0
+  m_Name: FaceDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7598853649904085133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5555365095288818826}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.29359, y: 0, z: -3.42572}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6908290013355836743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5555365095288818826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec134f072d32c45418a583ada82b4586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onnxModel: {fileID: 5022602860645237092, guid: 89c86c53b6055e347b6eeca7638d06bf, type: 3}
+  backend: 512
+  videoImage: {fileID: 0}
+  canvasRect: {fileID: 0}
+  boxDrawer: {fileID: 0}
+  boxPrefab: {fileID: 5830319883107844330, guid: 7984e949fe28af845a5f71ab24bf5ab6, type: 3}
+  videoRect: {fileID: 0}
+  requestWidth: 1280
+  requestHeight: 720
+  requestFPS: 30
+  confThreshold: 0.5
+  iouThreshold: 0.45
+  gazeOnnx: {fileID: 5022602860645237092, guid: 7fb1ad7b85d51fa4395c0741f5f57884, type: 3}
+  gazeBackend: 512
+  gazeDrawScale: 80
+  faceBoxPrefab: {fileID: 5830319883107844330, guid: 7984e949fe28af845a5f71ab24bf5ab6, type: 3}
+  gazeBoxPrefab: {fileID: 3268308524010316010, guid: 268e3de352efd78488558ad70453db59, type: 3}
+  gazeHeadPrefab: {fileID: 6660219595413763807, guid: 93f20d2b64b8ad44ca173450e544bc85, type: 3}
+--- !u!114 &1631585741886041615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5555365095288818826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 872ad61fafed1e148970fe1362e45053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceDetector: {fileID: 6908290013355836743}
+  testGazeButton: {fileID: 0}
+  manualGazeButton: {fileID: 0}
+  debugText: {fileID: 0}
