@@ -2,7 +2,6 @@
 
 A Unity project containing the required scene(s) and scripts for the Masters project, built on top of Meta's Passthrough Camera API samples and on-device ML/CV with Unity Sentis.
 
-- Repository: [`Julian-Marchington/FinalProject`](https://github.com/Julian-Marchington/FinalProject)
 - Unity versions tested: 6.2
 - Target device: Meta Quest 3 / 3S (Horizon OS v74+)
 
